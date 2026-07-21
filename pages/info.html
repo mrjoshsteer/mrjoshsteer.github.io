@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Me – Mr Steer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/base.css" rel="stylesheet" />
+    <link href="../assets/css/info.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="../assets/icons/primary_page.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <span class="brand">Mr Josh Steer</span>
+        <div class="nav-links">
+          <a href="#bio">Bio</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#photos">Photos</a>
+          <a href="#contact">Contact</a>
+          <a href="birthday.html" class="nav-cta">🎂 Countdown</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-banner">
+      <div class="container">
+        <img
+          class="avatar"
+          src="../assets/media/makeups/lighting_Steer.jpeg"
+          alt="Mr Steer"
+        />
+        <h1>Mr Josh Steer</h1>
+        <p class="tagline">
+          Maths &middot; Economics &middot; Business Studies
+        </p>
+      </div>
+    </section>
+
+    <section id="bio" class="section reveal">
+      <div class="container">
+        <h2>Bio</h2>
+        <p>
+          Mr Steer is a dedicated teacher with a passion for maths, economics,
+          and business studies. Since March 2024 he has taught in five schools
+          across the globe — some students call him Mr Steer, others prefer "Mr
+          J." He first discovered his love of teaching while helping younger
+          students during his own school years, and maths came naturally to him
+          from the start. Moving between schools has been an adventure, letting
+          him experience new cultures and teaching styles along the way. His
+          favourite colour is blue, and he can never say no to a stack of fluffy
+          pancakes or a strawberry milkshake. If he's eating out, you'll usually
+          find him at Al Shofra in Salmiya, Kuwait — and Italy holds a special
+          place in his heart for its food culture. His favourite maths joke:
+          "Why was 6 afraid of 7? Because 7 ate 9." Solving equations is his
+          favourite kind of lesson, and on the GBA calendar he's always looking
+          forward to Sports Day and the Maths Academia Cup.
+        </p>
+      </div>
+    </section>
+
+    <section id="teaching" class="section reveal alt">
+      <div class="container">
+        <h2>Teaching</h2>
+        <p>
+          In Mr Steer's classroom, learning and innovation go hand in hand. With
+          7 years of experience, he builds lessons that flex to different
+          learning needs, offering tasks pitched at varying levels of challenge.
+          Tools like Retrieval Starter Grids and differentiated worksheets keep
+          curiosity alive, while technology helps him streamline marking and
+          give personalised feedback across the many subjects and schools he's
+          taught in. More than a teacher, he's a mentor and a guide — leaving a
+          lasting impression on every student who crosses his path.
+        </p>
+      </div>
+    </section>
+
+    <section id="photos" class="section reveal">
+      <div class="container">
+        <h2>Photos</h2>
+        <div class="gallery">
+          <figure>
+            <img
+              src="../assets/media/mrSteer_img1.png"
+              alt="Mr Steer at the Egyptian Pyramids"
+            />
+            <figcaption>
+              Calculating triangles at every turn — the pyramids of Egypt.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../assets/media/mrSteer_img2.jpg"
+              alt="Mr Steer paragliding in Nepal"
+            />
+            <figcaption>
+              Paragliding over Nepal's breathtaking landscapes.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../assets/media/mrSteer_img3.jpg"
+              alt="Mr Steer at the Kuwait Gulf Towers"
+            />
+            <figcaption>
+              Taking in the view from Kuwait's Gulf Towers.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Connect with Mr Steer on LinkedIn:</p>
+        <a
+          class="linkedin-btn"
+          href="https://www.linkedin.com/in/josh-steer-390322268/"
+          target="_blank"
+          rel="noopener"
+        >
+          View LinkedIn Profile ↗
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; 2024 – A tribute page for Mr J Steer, made by one of his
+          students.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const reveals = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.15 },
+      );
+      reveals.forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
