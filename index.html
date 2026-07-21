@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A tribute website for Mr Josh Steer, maths teacher."
+    />
+    <meta http-equiv="refresh" content="2;url=pages/welcome.html" />
+    <link rel="icon" href="assets/icons/redirecting.ico" type="image/x-icon" />
+    <title>Redirecting…</title>
+    <style>
+      :root {
+        --navy-900: #071021;
+        --blue-500: #2f6fed;
+        --gold-500: #e8b64c;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          135deg,
+          var(--navy-900),
+          #0d1b34,
+          var(--blue-500)
+        );
+        background-size: 300% 300%;
+        animation: drift 6s ease infinite;
+        font-family: "Poppins", sans-serif;
+        color: var(--gold-500);
+        text-align: center;
+      }
+      @keyframes drift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .spinner {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 4px solid rgba(232, 182, 76, 0.25);
+        border-top-color: var(--gold-500);
+        animation: spin 0.9s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      a {
+        color: var(--gold-500);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="spinner"></div>
+      <p>Taking you to Mr Steer's page…</p>
+      <p>
+        <a href="pages/welcome.html">Click here if you're not redirected</a>
+      </p>
+    </div>
+  </body>
+</html>
