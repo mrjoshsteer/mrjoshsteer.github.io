@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A Maths Teacher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/base.css" rel="stylesheet" />
+    <link href="../assets/css/welcome.css" rel="stylesheet" />
+    <link rel="icon" href="../assets/icons/welcome.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <main class="hero">
+      <h1>
+        <a href="info.html"
+          >"In the wacky world of numbers and equations, there was a math whiz
+          who could make even the most serious calculations crack a smile!"</a
+        >
+      </h1>
+      <p class="hint">Click anywhere to visit Mr Steer's page</p>
+    </main>
+    <script>
+      document.body.addEventListener("click", () => {
+        window.location.href = "info.html";
+      });
+    </script>
+  </body>
+</html>
