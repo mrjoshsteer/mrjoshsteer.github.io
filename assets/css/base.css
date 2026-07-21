@@ -7,13 +7,21 @@
   --gold-500: #e8b64c;
   --gold-400: #f4d17e;
   --ivory: #f7f4ee;
-  --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-body);
@@ -22,5 +30,10 @@ body {
   line-height: 1.6;
 }
 
-a { color: inherit; }
-::selection { background: var(--gold-500); color: var(--navy-900); }
+a {
+  color: inherit;
+}
+::selection {
+  background: var(--gold-500);
+  color: var(--navy-900);
+}
