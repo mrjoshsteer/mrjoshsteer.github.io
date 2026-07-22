@@ -4,14 +4,30 @@
     <title>Mr Steer's Birthday Countdown</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
     <link href="../assets/css/base.css" rel="stylesheet" />
     <link href="../assets/css/birthday.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../assets/icons/bday_cake.ico" />
   </head>
+
   <body>
+    <canvas id="confetti-canvas"></canvas>
     <script src="../assets/js/birthday.js"></script>
+
     <div class="container">
-      <a class="back-link" href="info.html">← Back</a>
+      <a class="back-link" href="info.html">&larr; Back</a>
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        aria-label="Toggle dark and light theme"
+      >
+        🌙
+      </button>
       <h1 id="headline">Countdown to Mr Steer's Birthday</h1>
       <div id="countdown">
         <ul>
@@ -23,14 +39,17 @@
       </div>
       <div id="content" class="emoji">
         <span>🥳</span><span>🎉</span><span>🎂</span>
-        <span
-          ><img
-            src="https://media.giphy.com/media/feio2yIUMtdqWjRiaF/giphy.gif"
-            alt="Birthday gif"
-            height="750"
-            width="100%"
-        /></span>
+        <img
+          class="bday-gif"
+          src="https://media.giphy.com/media/feio2yIUMtdqWjRiaF/giphy.gif"
+          alt="Birthday celebration"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
+      <button id="celebrate-btn" class="celebrate-btn">🎉 Celebrate</button>
     </div>
+
+    <script src="../assets/js/theme.js" defer></script>
   </body>
 </html>
