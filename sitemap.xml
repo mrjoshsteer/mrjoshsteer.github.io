@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mrjoshsteer.github.io/</loc>
+    <lastmod>2026-07-21T18:27:08+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mrjoshsteer.github.io/pages/welcome.html</loc>
+    <lastmod>2026-07-21T18:27:08+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mrjoshsteer.github.io/pages/info.html</loc>
+    <lastmod>2026-07-21T18:27:08+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mrjoshsteer.github.io/pages/birthday.html</loc>
+    <lastmod>2026-07-21T18:27:08+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
