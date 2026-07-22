@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(160deg, var(--navy-900), #0d1b34);
+  background: var(--bg-page);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -9,8 +9,9 @@ body {
 .container {
   position: relative;
   text-align: center;
-  color: var(--gold-400);
+  color: var(--text-main);
   padding: 2rem;
+  max-width: 480px;
 }
 .back-link {
   position: absolute;
@@ -20,11 +21,25 @@ body {
   color: var(--blue-400);
   text-decoration: none;
 }
+.theme-toggle {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background: none;
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
 h1 {
   font-weight: 600;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  color: var(--gold-400);
 }
 li {
   display: inline-block;
@@ -32,6 +47,7 @@ li {
   list-style: none;
   padding: 1rem 1.5rem;
   text-transform: uppercase;
+  color: var(--text-main);
 }
 li span {
   display: block;
@@ -50,6 +66,33 @@ li span {
   font-size: 3.5rem;
   padding: 0 0.4rem;
 }
+.bday-gif {
+  display: block;
+  margin: 1.5rem auto 0;
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.celebrate-btn {
+  margin-top: 1.5rem;
+  background: linear-gradient(90deg, var(--gold-500), var(--gold-400));
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--navy-900);
+}
+#confetti-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  display: none;
+  z-index: 50;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 1.25rem;
