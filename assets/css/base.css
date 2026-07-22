@@ -7,33 +7,37 @@
   --gold-500: #e8b64c;
   --gold-400: #f4d17e;
   --ivory: #f7f4ee;
-  --font-heading: "Poppins", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --bg-page: var(--navy-900);
+  --bg-alt: rgba(255,255,255,0.03);
+  --bg-header: rgba(7,16,33,0.75);
+  --text-main: var(--ivory);
+  --text-muted: rgba(247,244,238,0.75);
+  --border-soft: rgba(232,182,76,0.15);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+html[data-theme="light"] {
+  --bg-page: #f7f4ee;
+  --bg-alt: rgba(7,16,33,0.05);
+  --bg-header: rgba(247,244,238,0.85);
+  --text-main: #0d1b34;
+  --text-muted: rgba(13,27,52,0.7);
+  --border-soft: rgba(47,111,237,0.2);
 }
 
-html {
-  scroll-behavior: smooth;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
-  background-color: var(--navy-900);
-  color: var(--ivory);
+  background-color: var(--bg-page);
+  color: var(--text-main);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a {
-  color: inherit;
-}
-::selection {
-  background: var(--gold-500);
-  color: var(--navy-900);
-}
+a { color: inherit; }
+::selection { background: var(--gold-500); color: var(--navy-900); }
