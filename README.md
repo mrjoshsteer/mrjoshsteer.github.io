@@ -17,4 +17,12 @@ himself. It includes a short bio, an overview of his teaching approach, a
 small photo gallery, a birthday countdown, and a link to his LinkedIn
 profile.
 
-## Structure
+## Built With
+
+- HTML5, CSS3, vanilla JavaScript
+- Hosted on GitHub Pages
+
+## License
+
+All rights reserved. See [LICENSE](./LICENSE); this content may not be
+copied, modified, or redistributed without written permission.
